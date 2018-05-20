@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
 		
 			when{
-				changeset blob: "*.js"
+				changeset glob: "*.js"
 			}
 		
             steps {                
